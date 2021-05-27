@@ -18,11 +18,11 @@
 		<div class="recherche"><input type="text" class="form-control" placeholder="Rechercher"></div>
 		<div class="collapse navbar-collapse" id="main-navigation">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Parcourir</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Mon compte</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"></a><img src="panier.jpg" alt="Panier" width="30 px"></li>
+				<li class="nav-item"><a class="nav-link" href="Accueil.html">Accueil</a></li>
+				<li class="nav-item"><a class="nav-link" href="Parcourir.html">Parcourir</a></li>
+				<li class="nav-item"><a class="nav-link" href="Notifications.html">Notifications</a></li>
+				<li class="nav-item"><a class="nav-link" href="Compte.html">Mon compte</a></li>
+				<li class="nav-item"><a class="nav-link" href="Panier.html"><img src="panier.jpg" alt="Panier" width="30 px"></a></li>
 			</ul>
 		</div>
 	</nav>
