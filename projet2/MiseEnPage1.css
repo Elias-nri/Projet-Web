@@ -75,6 +75,10 @@ justify-content: flex-end;
 	color: #F08080;
 }
 
+.Compte2 .Inscription .Buton{
+	color: #F08080;
+}
+
 .Compte h1{
 	color: #F08080;
 }
@@ -272,14 +276,22 @@ justify-content: flex-end;
 
 .pListe {
 	border: #fff;
+	background-color: rgb(190, 169, 169);
+	/*box-shadow: 0 0 0.5em #000;*/
 	border : solid #fff;
 	border-radius: 10px 10px 10px 10px;
 	padding: 30px 20px 30px 20px;
+	color : #fff;
+}
+
+.pListe .Bouton1{
+	color: #fff;
+	background-color: #F08080;
+	border-color: #F08080;
 }
 
 .pImage {
 	display: inline-block;
-	border : solid #fff;
 	width: 150px;
 	height: 150px;
 	vertical-align: top;
@@ -288,7 +300,8 @@ justify-content: flex-end;
 .pInformations {
 	display: inline-block;
 	border : solid #fff;
-	width: 250px;
+	border-radius: 10px 10px 10px 10px;
+	width: 500px;
 	height: 150px;
 	vertical-align: top;
 	
@@ -297,6 +310,7 @@ justify-content: flex-end;
 .pQuantite {
 	display: inline-block;
 	border : solid #fff;
+	border-radius: 10px 10px 10px 10px;
 	width: 100px;
 	height: 150px;
 	vertical-align: top;
@@ -304,7 +318,6 @@ justify-content: flex-end;
 }
 
 .pSupprimer {
-	/*float: right;*/
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -313,7 +326,6 @@ justify-content: flex-end;
 }
 
 .myOfferLink {
-	transform: translate(-50%, -55%);
 	text-align: left;
 	border: #fff;
 	border : solid #fff;
@@ -321,6 +333,8 @@ justify-content: flex-end;
 	padding: 30px 20px 30px 20px;
 	background-color: #fff;
 	box-shadow: 0 0 0.5em #000;	
+	width: 400px;
+	margin: 0 auto;
 }
 
 .myOfferLink h4{
@@ -339,4 +353,80 @@ justify-content: flex-end;
     font-weight: bold;
 	color: rgb(0, 0, 0); 
 	text-decoration: none;
+}
+
+.Achat h1{
+	color :#F08080;
+	float: center;
+}
+
+.notification {
+	border: #fff;
+	border : solid #fff;
+	border-radius: 10px 10px 10px 10px;
+	padding: 30px 20px 30px 20px;
+	background-color: #fff;
+	box-shadow: 0 0 0.5em #000;	
+	width: 500px;
+	margin: 0 auto;
+}
+
+#notif {
+	color :#F08080;
+	float: center;
+}
+
+.switch {
+	position: relative;
+}
+
+.switch input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch .onoff {
+	color: rgb(0, 0, 0);
+	font-size: 1em; /**/
+	display: block;
+}
+
+.slider {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	background-color: #000;
+	transition: .4s;
+	width: 50px;
+	height: 30px;
+}
+
+.slider:before {
+	content: '';
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	transition: .4s;
+	top: 2px;
+	left: 2px;
+}
+
+input:checked + .slider {
+	background-color: #F08080;
+	box-shadow: 0 0 2px #F08080;
+}
+
+input:checked + .slider:before {
+	transform: translateX(20px);
+}
+
+.slider.round {
+	border-radius: 20px;
+}
+
+.slider.round:before {
+	border-radius: 20px;
 }
