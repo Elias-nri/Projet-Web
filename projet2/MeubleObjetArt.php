@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+require 'db.class.php';
+$DB = new DB();
+?><!DOCTYPE html>
 <html>
 <head>
 	<title>Meuble et Objet d'art</title>
