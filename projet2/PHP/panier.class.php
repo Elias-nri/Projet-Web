@@ -17,7 +17,6 @@ class panier {
     }
 
     public function recalc() {
-        var_dump($_POST);
         foreach($_SESSION['panier'] as $produit_Id_Item => $quantite) {
             if(isset($_POST['panier']['quantite'][$produit_Id_Item])) {
                 $_SESSION['panier'] = $_POST['panier']['quantite'];
