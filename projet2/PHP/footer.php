@@ -3,14 +3,14 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Nos selections du jour</h3>
-				<img src="cahiers.jpg" class="img-fluid">
+				<img src="Img/2.jpg" class="img-fluid">
 				<p>
 					Des carnets couleur pastel dans la catégorie "Matériel Scolaire" au prix de 2,60 euros.
 				</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Nos selections du jour</h3>
-				<img src="bague.jpg" class="img-fluid">
+				<img src="Img/1.jpg" class="img-fluid">
 				<p>
 				    Une bague Eternel Edelweiss en saphir dans la catégorie "Accessoires Vip" au prix de 550 euros.
 			    </p>

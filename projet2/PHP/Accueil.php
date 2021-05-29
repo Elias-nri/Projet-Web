@@ -1,14 +1,9 @@
-<?php require 'header.php' ?>
-<?php
-if(isset($_GET['del'])) {
-	$panier->del($_GET['del']);
-}
-?>
+<?php require 'header.php'; ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Panier</title>
+	<title>ECE MarketPlace</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -33,49 +28,28 @@ if(isset($_GET['del'])) {
 			</ul>
 		</div>
 	</nav>
-
 	<section class="page-header header container-fluid">
-		<br><h1 class="titre">Panier</h1>
-		<form method="post" action="panier.php">
-		<?php
-		$ids = array_keys($_SESSION['panier']);
-		if(empty($ids)){
-			$produit = array();
-		}
-		else {
-			$produit = $DB->query('SELECT * FROM produit WHERE Id_Item IN ('.implode(',',$ids).')');
-		}
-		foreach($produit as $produit):
-		?>
-		<br>
-		<div class="pListe">
-			<div class="pImage">
-				<p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
-			</div>
-			<div class="pInformations">
-				<h5><?= $produit->Nom ?></h5>
-				<p><?= $produit->Description ?></p>
-			</div>
-			<div class="pQuantiteP">
-				<p>Quantité : 
-					<input type="number" name="panier[quantite][<?= $produit->Id_Item;?>]" value="<?= $_SESSION['panier'][$produit->Id_Item]; ?>">
-					<input type="submit" value="✓">   
-					<p>Prix unitaire : <?= number_format($produit->Prix,2,',',''); ?>€ </p>
-				</p>
-			</div>
-			<div class="pSupprimer">
-				<a href="Panier.php?del=<?= $produit->Id_Item; ?>"><img src="Img/Poubelle.png" alt="Poubelle" width="35"></a>
-			</div>
-		</div>
-		<?php endforeach; ?>
-		<br>
-		<div class="finPanier">
-			<h4 class="titre">Prix total : <?= number_format($panier->total(),2,',',''); ?>€</h4>
-		</div>
-		<button class="boutonP"><a href="Paiement.php">Paiement</a></button>
-		
-		</form>
-		<br>
+		<script type="text/javascript">
+	$(document).ready(function(){
+	$('.header').height($(window).height());
+    });
+    </script>
+
+     <div class="overlay"></div>
+     <div class="overlay"></div>
+     <div class="description">
+     	<h1>Bienvenue sur l'ECE MarketPlace !</h1>
+     	<p> L'ECE MarketPlace est un site pour le magasinage en ligne pour la communauté ECE Paris. Ce site vous permet d'acheter des articles en vente sur le site.<br>
+			<br>
+			ECE MarketPlace est ouvert à tous les membres de la communauté ECE Paris. Si vous avez un compte vendeur sur le site, vous pouvez mettre des articles en vente sur le site. 				Chaque article peut être vendu de différente manière :
+			<ul> 
+				<li> par vente immédiate (pas de négociation, l'article est acheté au prix indiqué) </li>
+				<li> par négociation (il y a une discussion entre le vendeur et le client pour négocier électroniquement) </li>
+				<li> par meilleure offre (aux enchères) </li>
+			</ul>
+			</p> 
+		<button class="btn btn-outline-secondary btn-lg"><a class="nav-link" href="Compte.html">Connexion</a></button>
+     </div>
 	</section>
 
-	<?php require 'footer.php' ?> 
+	<?php require 'footer.php'; ?>

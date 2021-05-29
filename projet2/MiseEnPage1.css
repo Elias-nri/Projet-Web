@@ -519,3 +519,46 @@ input:checked + .slider:before {
 .slider.round:before {
 	border-radius: 20px;
 }
+
+.Profil {
+	border: #fff;
+	border : solid #fff;
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px 3px 10px 3px;
+	background-color: #fff;
+	box-shadow: 0 0 0.5em #000;
+	width: auto;
+	height: auto;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.pp {
+	float: right;
+	width: 120px;
+	height: 120px;
+}
+
+.titreCompte {
+	text-align: center;
+	color: #F08080;
+}
+
+.infoF {
+	font-size: 12px;
+}
+
+.infosP {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+}
+
+.mev {
+	color: #000;
+	font-weight: bold;
+}
+
+.mev:hover {
+	color: #F08080;
+}

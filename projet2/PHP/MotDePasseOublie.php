@@ -1,14 +1,9 @@
-<?php require 'header.php' ?>
-<?php
-if(isset($_GET['del'])) {
-	$panier->del($_GET['del']);
-}
-?>
+<?php require 'header.php'; ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Panier</title>
+	<title>Mot de passe oublié</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -33,49 +28,25 @@ if(isset($_GET['del'])) {
 			</ul>
 		</div>
 	</nav>
-
 	<section class="page-header header container-fluid">
-		<br><h1 class="titre">Panier</h1>
-		<form method="post" action="panier.php">
-		<?php
-		$ids = array_keys($_SESSION['panier']);
-		if(empty($ids)){
-			$produit = array();
-		}
-		else {
-			$produit = $DB->query('SELECT * FROM produit WHERE Id_Item IN ('.implode(',',$ids).')');
-		}
-		foreach($produit as $produit):
-		?>
 		<br>
-		<div class="pListe">
-			<div class="pImage">
-				<p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
-			</div>
-			<div class="pInformations">
-				<h5><?= $produit->Nom ?></h5>
-				<p><?= $produit->Description ?></p>
-			</div>
-			<div class="pQuantiteP">
-				<p>Quantité : 
-					<input type="number" name="panier[quantite][<?= $produit->Id_Item;?>]" value="<?= $_SESSION['panier'][$produit->Id_Item]; ?>">
-					<input type="submit" value="✓">   
-					<p>Prix unitaire : <?= number_format($produit->Prix,2,',',''); ?>€ </p>
-				</p>
-			</div>
-			<div class="pSupprimer">
-				<a href="Panier.php?del=<?= $produit->Id_Item; ?>"><img src="Img/Poubelle.png" alt="Poubelle" width="35"></a>
-			</div>
-		</div>
-		<?php endforeach; ?>
-		<br>
-		<div class="finPanier">
-			<h4 class="titre">Prix total : <?= number_format($panier->total(),2,',',''); ?>€</h4>
-		</div>
-		<button class="boutonP"><a href="Paiement.php">Paiement</a></button>
-		
+		<form>
+			<div class="Compte">
+				<h2>Réinitialisez votre mot de passe<h2>
+				<p>
+				<label class="labelCol" for="myEmail">Pseudo ou E-mail: </label> <br>
+				<input type="text" class="myConnection" name="myEmail" id="myEmail" />
+				<br><br>
+				<label class="labelCol" for="myMDP">Mot de passe: </label> <br>
+				<input type="password" class="myConnection" name="myMDP" id="myMDP" /> 
+				<br><br> 
+				<label class="labelCol" for="myMDP">Confirmé le mot de passe: </label> <br>
+				<input type="password" class="myConnection" name="myMDP" id="myMDP" />
+				<br><br>
+				<input type="submit" class="Bouton1" value="Réinitialiser" />
+		    </div>
 		</form>
 		<br>
 	</section>
 
-	<?php require 'footer.php' ?> 
+	<?php require 'footer.php'; ?>

@@ -1,432 +1,576 @@
 body {
-padding: 0px;
-margin: 0px;
-background: #f2f6e9;
-}
-/*---navigation bar ---*/
-.navbar {
-background:#F08080;
-}
-
-.nav-link, .navbar-brand {
-color: #fff;
-cursor: pointer;
-}
-
-.nav-link {
-margin-right: 1em !important;
-}
-
-.nav-link:hover {
-color: #000;
-}
-
-.navbar-collapse {
-justify-content: flex-end;
-}
-
-.page-header header {
-	height: auto;
-}
-
-.header {
-	background-image: url('fonblanc.jpg');
-	background-size: cover;
-	background-position: center;
-	position: relative;
-}
-
-.overlay {
-	position: absolute;
-	min-height: 100%;
-	min-width: 100%;
-	left: 0px;top: 0px;
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.Compte {
-	text-align: center;
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 10px 3px 10px 3px;
-	font-size: 70%;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-	width: 470px;
-	margin: 0 auto;
-}
-
-.Compte2 {
-	text-align: center;
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 10px 3px 10px 3px;
-	font-size: 70%;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-	width: 470px;
-	margin: 0 auto;
-
-}
-
-.Compte2 h1{
-	color: #F08080;
-}
-
-.Compte2 .Inscription .Buton{
-	color: #F08080;
-}
-
-.Compte h1{
-	color: #F08080;
-}
-
-.Compte p{
-	color: rgb(7, 7, 7);
-	font-size: 0.9rem;
-	line-height: 1.5;
-}
-.description {
-	left: 50%;
-	position: absolute;
-	top: 45%;
-	transform: translate(-50%, -55%);
-	text-align: center;
-}
-
-.description h1 {
-	color: #F08080;
-}
-
-.description p {
-	color: #fff;
-	font-size: 0.9rem;
-	line-height: 1.5;
-}
-
-.description li {
-	color: #fff;
-	font-size: 0.8rem;
-	line-height: 1.5;
-}
-
-.description button {
-	border:1px solid #F08080;
-	background-color:#F08080;
-	border-radius: 0;
-	color:#fff;
-	font-size: 0.8rem;
-}
-
-.description button:hover {
-	border:1px solid #fff;
-	background-color:#fff;
-	color: #000;
-}
-
-.Compte .Buton1 {
-	border: solid #F08080;
-	background-color:#F08080;
-	border-radius: 0;
-	color:#fff;
-	font-size: 1.0rem;
-}
-
-.Compte .Bouton1:hover {
-	border:1px solid #fff;
-	background-color:#fff;
-	color: #000;
-}
-
-.features {
-	margin: 4em auto;
-	padding: 1em;position: relative;
+	padding: 0px;
+	margin: 0px;
+	background: #f2f6e9;
 	}
-
-.feature-title {
-	color: #333;
-	font-size: 1.3rem;
-	font-weight: 700;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-
-.features img {
-	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	margin-bottom: 16px;
-}
-
-.features .form-control,.features input {
-	border-radius: 0;
-}
-
-.features .btn {
-	background-color: #F08080;
-	border: 1px solid #F08080;
-	color: #fff;
-	margin-top: 20px;
-}
-
-.features .btn:hover {
-	background-color: #333;
-	border: 1px solid #333;
-}
-
-.page-footer {
-	background-color: #222;
-	color: #ccc;
-	padding: 60px 0 30px;
+	/*---navigation bar ---*/
+	.navbar {
+	background:#F08080;
 	}
-
-.footer-copyright {
-	color: #666;
-	padding: 40px 0;
-}
-
-.All {
-	display: flex;
-    justify-content: space-around;
 	
-} 
-
-.InfoLivraison { 
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 20px 30px 20px 30px;
-	margin: 20px 10px 20px 10px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-}
-
-.InfoLivraison h1{
-	color: #F08080;
-}
-
-.InfoLivraison1 { 
-	/*position: absolute;*/
-	width: 200px;
-}
-
-
-.myLivraison1 {
-	/*position: absolute;*/
-	width: 200px;
-}
-
-
-.InfoPaiement {
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 20px 30px 20px 30px;
-	margin: 20px 10px 20px 10px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;	
-}
-
-.InfoPaiement h1{
-	color: #F08080;
-}
-
-.InfoPaiement1 {
-	position: absolute;
-}
-
-.myPaiement {
-	position: absolute;
-}
-
-#bouton {
-	text-align: center;
-}
-
-.Vente {
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 20px 30px 20px 30px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-	width: 400px;
-	margin: 0 auto;
-}
-
-.Vente h3{
-	color: #F08080;
-}
-
-.Vente1 {
-	position: absolute;
-
-}
-
-.myVente {
-	position: absolute;
-
-}
-
-.Bouton4 {
-	padding-right: 40%;
-	padding-left: 40%;
-}
-
-.pListe {
-	border: #fff;
-	background-color: rgb(190, 169, 169);
-	/*box-shadow: 0 0 0.5em #000;*/
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 30px 20px 30px 20px;
-	color : #fff;
-}
-
-.pListe .Bouton1{
+	.nav-link, .navbar-brand {
 	color: #fff;
-	background-color: #F08080;
-	border-color: #F08080;
-}
-
-.pImage {
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	vertical-align: top;
-}
-
-.pInformations {
-	display: inline-block;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	width: 500px;
-	height: 150px;
-	vertical-align: top;
-	
-}
-
-.pQuantite {
-	display: inline-block;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	width: 100px;
-	height: 150px;
-	vertical-align: top;
-
-}
-
-.pSupprimer {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	vertical-align: top;
-
-}
-
-.myOfferLink {
-	text-align: left;
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 30px 20px 30px 20px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;	
-	width: 400px;
-	margin: 0 auto;
-}
-
-.myOfferLink h4{
-	color: #F08080;
-}
-
-
-.lien {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-	float : center;
-    cursor: pointer; 
-}
-
-.lien:hover {
-    font-weight: bold;
-	color: rgb(0, 0, 0); 
-	text-decoration: none;
-}
-
-.Achat h1{
-	color :#F08080;
-	float: center;
-}
-
-.notification {
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 30px 20px 30px 20px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;	
-	width: 500px;
-	margin: 0 auto;
-}
-
-#notif {
-	color :#F08080;
-	float: center;
-}
-
-.switch {
-	position: relative;
-}
-
-.switch input {
-	position: absolute;
-	opacity: 0;
-	width: 0;
-	height: 0;
-}
-
-.switch .onoff {
-	color: rgb(0, 0, 0);
-	font-size: 1em; /**/
-	display: block;
-}
-
-.slider {
-	position: relative;
-	display: block;
 	cursor: pointer;
-	background-color: #000;
-	transition: .4s;
-	width: 50px;
-	height: 30px;
-}
+	}
+	
+	.nav-link {
+	margin-right: 1em !important;
+	}
+	
+	.nav-link:hover {
+	color: #000;
+	}
+	
+	.navbar-collapse {
+	justify-content: flex-end;
+	}
+	
+	.page-header header {
+		height: auto;
+	}
+	
+	.header {
+		background-image: url('Img/fonblanc.jpg');
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	
+	.overlay {
+		position: absolute;
+		min-height: 100%;
+		min-width: 100%;
+		left: 0px;top: 0px;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+	.Compte {
+		text-align: center;
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 10px 3px 10px 3px;
+		font-size: 70%;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		width: 470px;
+		margin: 0 auto;
+	}
+	/**/
+	.Compte2 {
+		text-align: center;
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 10px 3px 10px 3px;
+		font-size: 70%;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		width: 470px;
+		margin: 0 auto;
+	
+	}
+	/**/
+	.Compte2 h1{
+		color: #F08080;
+	}
+	
+	
+	.Compte h1{
+		color: #F08080;
+	}
 
-.slider:before {
-	content: '';
-	position: absolute;
-	height: 25px;
-	width: 25px;
-	background-color: #fff;
-	transition: .4s;
-	top: 2px;
-	left: 2px;
-}
+	.Compte h2{
+		color: #F08080;
+	}
+	
+	
+	.Compte p{
+		color: rgb(7, 7, 7);
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+	/**/
+	.Compte2 p{
+		color: rgb(7, 7, 7);
+		font-size: 0.9rem;
+		line-height: 1.5;
+		font-weight: 600;
+	
+	}
+	/**/
+	.description {
+		left: 50%;
+		position: absolute;
+		top: 45%;
+		transform: translate(-50%, -55%);
+		text-align: center;
+	}
+	
+	.description h1 {
+		color: #F08080;
+	}
+	
+	.description p {
+		color: #fff;
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+	
+	.description li {
+		color: #fff;
+		font-size: 0.8rem;
+		line-height: 1.5;
+	}
+	
+	.description button {
+		border:1px solid #F08080;
+		background-color:#F08080;
+		border-radius: 0;
+		color:#fff;
+		font-size: 0.8rem;
+	}
+	
+	.description button:hover {
+		border:1px solid #fff;
+		background-color:#fff;
+		color: #000;
+	}
+	
+	.Compte .Buton1 {
+		border: solid #F08080;
+		background-color:#F08080;
+		border-radius: 0;
+		color:#fff;
+		font-size: 1.0rem;
+	}
+	
+	.Compte .Bouton1:hover {
+		border:1px solid #fff;
+		background-color:#fff;
+		color: #000;
+	}
+	
+	.features {
+		margin: 4em auto;
+		padding: 1em;position: relative;
+		}
+	
+	.feature-title {
+		color: #333;
+		font-size: 1.3rem;
+		font-weight: 700;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	
+	.features img {
+		-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		margin-bottom: 16px;
+	}
+	
+	.features .form-control,.features input {
+		border-radius: 0;
+	}
+	
+	.features .btn {
+		background-color: #F08080;
+		border: 1px solid #F08080;
+		color: #fff;
+		margin-top: 20px;
+	}
+	
+	.features .btn:hover {
+		background-color: #333;
+		border: 1px solid #333;
+	}
+	
+	.page-footer {
+		background-color: #222;
+		color: #ccc;
+		padding: 60px 0 30px;
+		}
+	
+	.footer-copyright {
+		color: #666;
+		padding: 40px 0;
+	}
+	
+	.All {
+		display: flex;
+		justify-content: space-around;
+		
+	} 
+	
+	.InfoLivraison { 
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 20px 30px 20px 30px;
+		margin: 20px 10px 20px 10px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+	}
+	
+	.InfoLivraison h1{
+		color: #F08080;
+	}
+	
+	.InfoLivraison1 { 
+		/*position: absolute;*/
+		width: 200px;
+	}
+	
+	
+	.myLivraison1 {
+		/*position: absolute;*/
+		width: 200px;
+	}
+	
+	
+	.InfoPaiement {
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 20px 30px 20px 30px;
+		margin: 20px 10px 20px 10px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;	
+	}
+	
+	.InfoPaiement h1{
+		color: #F08080;
+	}
+	
+	.InfoPaiement1 {
+		position: absolute;
+	}
+	
+	.myPaiement {
+		position: absolute;
+	}
+	
+	#bouton {
+		text-align: center;
+	}
+	
+	.Vente {
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 20px 30px 20px 30px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		width: 400px;
+		margin: 0 auto;
+	}
+	
+	.Vente h3{
+		color: #F08080;
+	}
+	
+	.Vente1 {
+		position: absolute;
+	
+	}
+	
+	.myVente {
+		position: absolute;
+	
+	}
+	
+	/**/
+	.pListe {
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 20px 30px 20px 30px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		display: flex;
+		justify-content: flex-start;
+		width: auto;
+		max-width: 800px;
+	}
+	
+	.pListe .Bouton1{
+		color: #fff;
+		background-color: #F08080;
+		border-color: #F08080;
+	}
+	
+	.pImage {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		width: 150px;
+		height: 150px;
+		vertical-align: top;
+	}
+	
+	.pInformations {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		border : solid #F08080;
+		border-radius: 10px 10px 10px 10px;
+		width: 300px;
+		height: 150px;
+		vertical-align: top;
+		overflow: auto;
+	}
+	
+	.pQuantite {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		border : solid #F08080;
+		border-radius: 10px 10px 10px 10px;
+		width: 100px;
+		height: 150px;
+		vertical-align: top;
+	}
 
-input:checked + .slider {
-	background-color: #F08080;
-	box-shadow: 0 0 2px #F08080;
-}
-
-input:checked + .slider:before {
-	transform: translateX(20px);
-}
-
-.slider.round {
-	border-radius: 20px;
-}
-
-.slider.round:before {
-	border-radius: 20px;
-}
+	.pQuantiteP {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		border : solid #F08080;
+		border-radius: 10px 10px 10px 10px;
+		width: 290px;
+		height: 150px;
+		vertical-align: top;
+	}
+	
+	.pSupprimer {
+		margin: 1px 4px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		width: 50px;
+		height: 50px;
+		vertical-align: top;
+	}
+	
+	.titre {
+		color: #F08080;
+	}
+	
+	.pListeMO {
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 20px 30px 20px 30px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		max-width: 600px;
+	}
+	
+	.pListeMO .Bouton1{
+		color: #fff;
+		background-color: #F08080;
+		border-color: #F08080;
+	}
+	
+	.pImageMO {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+	}
+	
+	.pInformationsMO {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		width: auto;
+		height: auto;
+		display: flex;
+		justify-content: left;
+		overflow: auto;
+	}
+	
+	.pInformationsMOI {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		border : solid #F08080;
+		border-radius: 10px 10px 10px 10px;
+		width: 400px;
+		height: auto;
+		overflow: auto;
+	}
+	
+	.pInformationsM {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		border : solid #F08080;
+		border-radius: 10px 10px 10px 10px;
+		width: 500px;
+		height: auto;
+		overflow: auto;
+	}
+	
+	.pInformationsMI {
+		margin: 1px 6px 1px 2px;
+		padding: 2px 2px 2px 2px;
+		border : solid #F08080;
+		border-radius: 10px 10px 10px 10px;
+		width: auto;
+		height: 50px;
+		overflow: auto;
+	}
+	
+	.boutonP{
+		background-color: #F08080;
+		border-color: #F08080;
+	}
+	
+	.boutonP a {
+		color: #fff;
+	}
+	
+	
+	
+	/**/
+	
+	.myOfferLink {
+		text-align: left;
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 30px 20px 30px 20px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;	
+		width: 400px;
+		margin: 0 auto;
+	}
+	
+	.myOfferLink h4{
+		color: #F08080;
+	}
+	
+	
+	.lien {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		float : center;
+		cursor: pointer; 
+	}
+	
+	.lien:hover {
+		font-weight: bold;
+		color: rgb(0, 0, 0); 
+		text-decoration: none;
+	}
+	
+	.Achat h1{
+		color :#F08080;
+		float: center;
+	}
+	
+	.notification {
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 30px 20px 30px 20px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;	
+		width: 500px;
+		margin: 0 auto;
+	}
+	
+	#notif {
+		color :#F08080;
+		float: center;
+	}
+	
+	.switch {
+		position: relative;
+	}
+	
+	.switch input {
+		position: absolute;
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	
+	.switch .onoff {
+		color: rgb(0, 0, 0);
+		font-size: 1em; /**/
+		display: block;
+	}
+	
+	.slider {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		background-color: #000;
+		transition: .4s;
+		width: 50px;
+		height: 30px;
+	}
+	
+	.slider:before {
+		content: '';
+		position: absolute;
+		height: 25px;
+		width: 25px;
+		background-color: #fff;
+		transition: .4s;
+		top: 2px;
+		left: 2px;
+	}
+	
+	input:checked + .slider {
+		background-color: #F08080;
+		box-shadow: 0 0 2px #F08080;
+	}
+	
+	input:checked + .slider:before {
+		transform: translateX(20px);
+	}
+	
+	.slider.round {
+		border-radius: 20px;
+	}
+	
+	.slider.round:before {
+		border-radius: 20px;
+	}
+	
+	.Profil {
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 10px 3px 10px 3px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		width: auto;
+		height: auto;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	
+	.pp {
+		float: right;
+		width: 120px;
+		height: 120px;
+	}
+	
+	.titreCompte {
+		text-align: center;
+		color: #F08080;
+	}
+	
+	.infoF {
+		font-size: 12px;
+	}
+	
+	.infosP {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+	}
+	
+	.mev {
+		color: #000;
+		font-weight: bold;
+	}
+	
+	.mev:hover {
+		color: #F08080;
+	}

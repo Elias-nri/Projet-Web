@@ -1,0 +1,77 @@
+<?php require 'header.php'; ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Notifications</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="MiseEnPage1.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="Accueil.php">ECE MarketPlace</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="recherche"><input type="text" class="form-control" placeholder="Rechercher"></div>
+		<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="Accueil.php">Accueil</a></li>
+				<li class="nav-item"><a class="nav-link" href="Parcourir.php">Parcourir</a></li>
+				<li class="nav-item"><a class="nav-link" href="Notifications.php">Notifications</a></li>
+				<li class="nav-item"><a class="nav-link" href="Compte.php">Mon compte</a></li>
+				<li class="nav-item"><a class="nav-link" href="Panier.php"><img src="Img/panier.jpg" alt="Panier"
+							width="30 px"></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="page-header header container-fluid">
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.header').height($(window).height());
+			});
+		</script>
+		<br>
+		<div class="notification">
+			<form>
+				<h1 id="notif">Notifications</h1>
+				<label class="labelCol" for="myEmail">Pseudo ou E-mail: </label> <br>
+				<input type="text" class="myConnection" name="myEmail" id="myEmail" />
+				<br>
+				<label class="labelCol" for="myMDP">Mot de passe: </label> <br>
+				<input type="password" class="myConnection" name="myMDP" id="myMDP" /> <br>
+				<br><p>Abonnez vous à la newsletter!</p>
+				<label class="switch">
+					<span class="onoff">Meubles et objets d'art</span><input type="checkbox">
+					<span class="slider round"></span>
+					
+					</input>
+				</label>
+				<br>
+				<label class="switch">
+					<span class="onoff">Accessoires VIP</span>
+					<input type="checkbox">
+					<span class="slider round"></span>
+					</input>
+				</label>
+				<br>
+				<label class="switch">
+					<span class="onoff">Matériels scolaires</span>
+					<input type="checkbox">
+					<span class="slider round"></span>
+					</input>
+				</label>
+				<br><br><input type="submit" class="Bouton1" value="Valider" /><br>
+			</form>
+		</div>
+
+	</section>
+
+	<?php require 'footer.php'; ?>
