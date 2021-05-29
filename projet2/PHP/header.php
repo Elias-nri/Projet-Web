@@ -1,7 +1,15 @@
+<?php
+require 'db.class.php';
+require 'panier.class.php';
+$DB = new DB();
+$panier = new panier($DB);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Achats Immédiats</title>
+	<title>Meuble et Objet d'art</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -22,9 +30,7 @@
 				<li class="nav-item"><a class="nav-link" href="Parcourir.html">Parcourir</a></li>
 				<li class="nav-item"><a class="nav-link" href="Notifications.html">Notifications</a></li>
 				<li class="nav-item"><a class="nav-link" href="Compte.html">Mon compte</a></li>
-				<li class="nav-item"><a class="nav-link" href="Panier.html"><img src="panier.jpg" alt="Panier" width="30 px"></a></li>
+				<li class="nav-item"><a class="nav-link" href="Panier.php"><img src="panier.jpg" alt="Panier" width="30 px"></a></li>
 			</ul>
 		</div>
 	</nav>
-</body>
-</html>

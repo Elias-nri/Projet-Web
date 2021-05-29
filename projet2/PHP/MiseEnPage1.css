@@ -8,8 +8,6 @@ background: #f2f6e9;
 background:#F08080;
 }
 
-
-
 .nav-link, .navbar-brand {
 color: #fff;
 cursor: pointer;
@@ -58,7 +56,7 @@ justify-content: flex-end;
 	width: 470px;
 	margin: 0 auto;
 }
-/**/
+
 .Compte2 {
 	text-align: center;
 	border: #fff;
@@ -72,31 +70,24 @@ justify-content: flex-end;
 	margin: 0 auto;
 
 }
-/**/
+
 .Compte2 h1{
 	color: #F08080;
 }
 
+.Compte2 .Inscription .Buton{
+	color: #F08080;
+}
 
 .Compte h1{
 	color: #F08080;
 }
-
 
 .Compte p{
 	color: rgb(7, 7, 7);
 	font-size: 0.9rem;
 	line-height: 1.5;
 }
-/**/
-.Compte2 p{
-	color: rgb(7, 7, 7);
-	font-size: 0.9rem;
-	line-height: 1.5;
-	font-weight: 600;
-
-}
-/**/
 .description {
 	left: 50%;
 	position: absolute;
@@ -278,17 +269,19 @@ justify-content: flex-end;
 
 }
 
-/**/
+.Bouton4 {
+	padding-right: 40%;
+	padding-left: 40%;
+}
+
 .pListe {
+	border: #fff;
+	background-color: rgb(190, 169, 169);
+	/*box-shadow: 0 0 0.5em #000;*/
 	border : solid #fff;
 	border-radius: 10px 10px 10px 10px;
-	padding: 20px 30px 20px 30px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-	display: flex;
-	justify-content: flex-start;
-	width: auto;
-	max-width: 800px;
+	padding: 30px 20px 30px 20px;
+	color : #fff;
 }
 
 .pListe .Bouton1{
@@ -298,121 +291,39 @@ justify-content: flex-end;
 }
 
 .pImage {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
+	display: inline-block;
 	width: 150px;
 	height: 150px;
 	vertical-align: top;
 }
 
 .pInformations {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-	border : solid #F08080;
+	display: inline-block;
+	border : solid #fff;
 	border-radius: 10px 10px 10px 10px;
-	width: 300px;
+	width: 500px;
 	height: 150px;
 	vertical-align: top;
-	overflow: auto;
+	
 }
 
 .pQuantite {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-	border : solid #F08080;
+	display: inline-block;
+	border : solid #fff;
 	border-radius: 10px 10px 10px 10px;
 	width: 100px;
 	height: 150px;
 	vertical-align: top;
+
 }
 
 .pSupprimer {
-	margin: 1px 4px 1px 2px;
-	padding: 2px 2px 2px 2px;
+	display: inline-block;
 	width: 50px;
 	height: 50px;
 	vertical-align: top;
+
 }
-
-.titre {
-	color: #F08080;
-}
-
-.pListeMO {
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 20px 30px 20px 30px;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-	display: flex;
-	flex-direction: column;
-	width: auto;
-	max-width: 600px;
-}
-
-.pListeMO .Bouton1{
-	color: #fff;
-	background-color: #F08080;
-	border-color: #F08080;
-}
-
-.pImageMO {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-}
-
-.pInformationsMO {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-	width: auto;
-	height: auto;
-	display: flex;
-	justify-content: left;
-	overflow: auto;
-}
-
-.pInformationsMOI {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-	border : solid #F08080;
-	border-radius: 10px 10px 10px 10px;
-	width: 400px;
-	height: auto;
-	overflow: auto;
-}
-
-.pInformationsM {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-	border : solid #F08080;
-	border-radius: 10px 10px 10px 10px;
-	width: 500px;
-	height: auto;
-	overflow: auto;
-}
-
-.pInformationsMI {
-	margin: 1px 6px 1px 2px;
-	padding: 2px 2px 2px 2px;
-	border : solid #F08080;
-	border-radius: 10px 10px 10px 10px;
-	width: auto;
-	height: 50px;
-	overflow: auto;
-}
-
-.boutonP{
-	background-color: #F08080;
-	border-color: #F08080;
-}
-
-.boutonP a {
-	color: #fff;
-}
-
-
-
-/**/
 
 .myOfferLink {
 	text-align: left;
