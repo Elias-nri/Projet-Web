@@ -74,6 +74,10 @@ body {
 	.Compte2 h1{
 		color: #F08080;
 	}
+
+	.Compte2 h2{
+		color: #F08080;
+	}
 	
 	
 	.Compte h1{
@@ -551,6 +555,10 @@ body {
 		height: 120px;
 	}
 	
+	.fond {
+		width: auto;
+	}
+
 	.titreCompte {
 		text-align: center;
 		color: #F08080;
@@ -573,4 +581,69 @@ body {
 	
 	.mev:hover {
 		color: #F08080;
+	}
+
+	.choixB {
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 10px 3px 10px 3px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		width: auto;
+		height: auto;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.titreCCC {
+		color: #F08080;
+		text-align: center;
+	}
+
+	.choix {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.choixV:hover {
+		font-weight: bold;
+		color: #000;
+	}
+
+	.choixA:hover {
+		font-weight: bold;
+		color: #000;
+	}
+
+	.choixV {
+		color: #000;
+	}
+
+	.choixA {
+		color: #000;
+	}
+
+	#carouselExemple {
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	.carousel-item img {
+		width: 100%;
+		height: auto;
+	}
+
+	.confirmationP {
+		border: #fff;
+		border : solid #fff;
+		border-radius: 10px 10px 10px 10px;
+		padding: 10px 3px 10px 3px;
+		background-color: #fff;
+		box-shadow: 0 0 0.5em #000;
+		width: auto;
+		height: auto;
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
 	}

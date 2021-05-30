@@ -2,26 +2,119 @@
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Nos selections du jour</h3>
-				<img src="Img/2.jpg" class="img-fluid">
-				<p>
-					Des carnets couleur pastel dans la catégorie "Matériel Scolaire" au prix de 2,60 euros.
-				</p>
+				
+				<div id="carouselExemple" class="carousel slide" data-ride="carousel" data-interval="6000">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExemple" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExemple" data-slide-to="1"></li>
+            <li data-target="#carouselExemple" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+            	<h3 class="feature-title">Nos best-sellers</h3>
+                <img src="Img/4.jpg" alt="statut lapin " width="200px"
+                    class="d-block">
+            </div>
+
+            <div class="carousel-item">
+            	<h3 class="feature-title">Nos best-sellers</h3>
+                <img src="Img/objetArt.png" alt="Meuble et objet d'art" width="200px"
+                    class="d-block">
+            </div>
+
+            <div class="carousel-item">
+            	<h3 class="feature-title">Nos best-sellers</h3>
+                <img src="Img/3.jpg" alt="piece" width="200px"
+                    class="d-block">
+            </div>
+
+        </div>
+
+        <a href="#carouselExemple" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExemple" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+
+    <script>
+        $('.carousel').carousel({
+
+            pause: "null"
+
+        })
+    </script>
 			</div>
+
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Nos selections du jour</h3>
-				<img src="Img/1.jpg" class="img-fluid">
-				<p>
-				    Une bague Eternel Edelweiss en saphir dans la catégorie "Accessoires Vip" au prix de 550 euros.
-			    </p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div id="carouselExemple" class="carousel slide" data-ride="carousel" data-interval="6000">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExemple" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExemple" data-slide-to="1"></li>
+            <li data-target="#carouselExemple" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+            	<h3 class="feature-title">Nos best-sellers</h3>
+                <img src="Img/Accessoire.png" alt="accessoire " width="200 px"
+                    class="d-block">
+            </div>
+
+            <div class="carousel-item">
+            	<h3 class="feature-title">Nos best-sellers</h3>
+                <img src="Img/7.jpg" alt="boucles" width="200 px"
+                    class="d-block">
+            </div>
+
+            <div class="carousel-item">
+            	<h3 class="feature-title">Nos best-sellers</h3>
+                <img src="Img/5.jpg" alt="montre" width="200 px"
+                    class="d-block">
+            </div>
+
+        </div>
+
+        <a href="#carouselExemple" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExemple" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+
+    <script>
+        $('.carousel').carousel({
+
+            pause: "null"
+
+        })
+    </script>
+	
+	</div>
+			<div class="col-lg-4 col-md-4 col-sm-122">
 				<h3 class="feature-title">Entrez en contact!</h3>
 	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Votre nom" name="">
+		<input type="text" class="form-control" placeholder="Votre nom:" name="">
 	</div>
 	<div class="form-group">
-		<input type="email" class="form-control" placeholder="Courriel" name="email">
+		<input type="email" class="form-control" placeholder="Courriel:" name="email">
 	</div>
 	<div class="form-group">
 		<textarea class="form-control" rows="4" placeholder="Vos commentaires"></textarea>
@@ -30,6 +123,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<footer class="page-footer">   
 		<div class="container">

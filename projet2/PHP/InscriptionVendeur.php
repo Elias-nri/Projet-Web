@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Inscription</title>
+	<title>Inscription Vendeur</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -13,45 +13,40 @@
 
 <body>
 	<nav class="navbar navbar-expand-md">
-		<a class="navbar-brand" href="Accueil.html">ECE MarketPlace</a>
+		<a class="navbar-brand" href="Accueil.php">ECE MarketPlace</a>
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="recherche"><input type="text" class="form-control" placeholder="Rechercher"></div>
 		<div class="collapse navbar-collapse" id="main-navigation">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="Accueil.html">Accueil</a></li>
-				<li class="nav-item"><a class="nav-link" href="Parcourir.html">Parcourir</a></li>
-				<li class="nav-item"><a class="nav-link" href="Notifications.html">Notifications</a></li>
-				<li class="nav-item"><a class="nav-link" href="Compte.html">Mon compte</a></li>
-				<li class="nav-item"><a class="nav-link" href="Panier.html"><img src="panier.jpg" alt="Panier"
+				<li class="nav-item"><a class="nav-link" href="Accueil.php">Accueil</a></li>
+				<li class="nav-item"><a class="nav-link" href="Parcourir.php">Parcourir</a></li>
+				<li class="nav-item"><a class="nav-link" href="Notifications.php">Notifications</a></li>
+				<li class="nav-item"><a class="nav-link" href="ChoixConnectionCompte.php">Mon compte</a></li>
+				<li class="nav-item"><a class="nav-link" href="Panier.php"><img src="Img/panier.jpg" alt="Panier"
 							width="30 px"></a></li>
 			</ul>
 		</div>
 	</nav>
 	<section class="page-header header container-fluid">
 		<br>
-		<form>
+		<form action="InscriptionVendeur.class.php" method="post">
 			<div class="Compte2">
-				<h1>Je crée mon compte</h1>
+				<h2>Je crée mon compte vendeur</h2>
 
 				<p>
 					<label class="labelCol" for="myPseudo">Pseudo : </label><br>
-					<input type="text" class="myInscription" name="myPseudo" id="myPseudo" required autofocus />
+					<input type="text" class="myInscription" name="myPseudo1" id="myPseudo" required autofocus />
 					<br><br>
 					<label class="labelCol" for="myEmail1">E-mail : </label><br>
 					<input type="email" class="myInscription" name="myEmail1" id="myEmail1" required />
 					<br><br>
 					<label class="labelCol" for="myMPD1">Mot de passe : </label><br>
-					<input type="password" class="myInscription" name="myMPD1" id="myMPD1" required />
+					<input type="password" class="myInscription" name="myMPD3" id="myMPD1" required />
 					<br><br>
 					<label class="labelCol" for="myMPD1">Vérification du mot de passe : </label><br>
-					<input type="text" class="myInscription" name="myMPD2" id="myMPD2" required />
-					<br><br>
-					<input type="radio" class="Bouton" name="acheteur" value="acheteur" id="acheteur" />
-					<label for="homme">Acheteur</label>
-					<input type="radio" class="Bouton" name="vendeur" value="vendeur" id="vendeur" />
-					<label for="femme">Vendeur</label>
+					<input type="text" class="myInscription" name="myMPD4" id="myMPD2" required />
 					<br><br>
 					<input class="Bouton" id="" type="checkbox">
 					<label for="myComments">J'accepte de recevoir par e-mail les offres et newsletter d'information de
@@ -67,27 +62,4 @@
 		<br>
 	</section>
 
-	<footer class="page-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Information additionnelle</h6>
-					<p>
-						Merci d'avoir visité notre site, à bientôt !
-					</p>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Contact</h6>
-					<p>ECE MarketPlace <br>
-						<a href="mailto:marketplace@ece.fr">Envoyez-nous un mail</a><br>
-						Appelez-nous au: 01 02 03 04 05<br>
-						Envoyez-nous une lettre au: 37 Quai de Grenelle, 75015 Paris<br>
-					<p>
-				</div>
-			</div>
-			<div class="footer-copyright text-center">&copy; 2021 Copyright | Droit d'auteur
-			</div>
-	</footer>
-</body>
-
-</html>
+	<?php require 'footer.php'; ?>

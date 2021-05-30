@@ -10,6 +10,16 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="MiseEnPage1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-md">
@@ -23,7 +33,7 @@
 				<li class="nav-item"><a class="nav-link" href="Accueil.php">Accueil</a></li>
 				<li class="nav-item"><a class="nav-link" href="Parcourir.php">Parcourir</a></li>
 				<li class="nav-item"><a class="nav-link" href="Notifications.php">Notifications</a></li>
-				<li class="nav-item"><a class="nav-link" href="Compte.php">Mon compte</a></li>
+				<li class="nav-item"><a class="nav-link" href="ChoixConnectionCompte.php">Mon compte</a></li>
 				<li class="nav-item"><a class="nav-link" href="Panier.php"><img src="Img/panier.jpg" alt="Panier" width="30 px"></a></li>
 			</ul>
 		</div>
@@ -34,7 +44,7 @@
 		<div class="Achat">
 			<h1>Accessoires VIP</h1>
 		</div>
-		<?php $produit = $DB->query('SELECT * FROM produit WHERE Categorie = "Accessoire VIP"'); ?>
+		<?php $produit = $DB->query('SELECT * FROM produit WHERE Categorie = "Accessoire VIP" AND TypeVente = "Achat Immediat" '); ?>
 		<?php foreach ($produit as $key => $produit): ?>
 		<div class="pListe">
 			<div class="pImage">
@@ -55,6 +65,55 @@
 		</div>
 		<br>
         <?php endforeach ?>
+		<?php $produit = $DB->query('SELECT * FROM produit WHERE Categorie = "Accessoire VIP" AND TypeVente = "Enchere" '); ?>
+		<?php foreach ($produit as $key => $produit): ?>
+		<div class="pListeMO">
+			<div class="pInformationsMO">
+				<div class="pImageMO">
+					<p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
+				</div>
+				<div class="pInformationsMOI">
+					<h5><?= $produit->Nom ?></h5>
+					<p><?= $produit->Description ?></p>
+				</div>
+				<br>
+			</div>
+			<br>
+			<div class="pinformationsM">
+				<div class="pInformationsMI">
+					<p>Enchère de base : <?= number_format($produit->Prix,2,',',''); ?>€</p>
+				</div>
+				<br>
+				<input type="number" class="myEnchere" name="enchère" id="enchere" placeholder="Votre enchère:" />
+				<input type="submit" class="Bouton1" value="Enchérir" />
+			</div>
+			<br>
+		</div>
+		<br>
+		<?php endforeach ?>
+		<?php $produit = $DB->query('SELECT * FROM produit WHERE Categorie = "Accessoire VIP" AND TypeVente = "Transaction Vendeur/Client" ' ); ?>
+		<?php foreach ($produit as $key => $produit): ?>
+		<div class="pListeMO">
+			<div class="pinformationMO">
+				<div class="pImageMO">
+					<p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
+				</div>
+				<div class="pInformationsMOI">
+					<h5><?= $produit->Nom ?></h5>
+					<p><?= $produit->Description ?></p>
+				</div>
+				<br>
+			</div>
+
+			<br>
+			<div class="pinformationM">
+				<input type="number" class="transaction" name="transaction" id="transaction"
+					placeholder="Votre prix:" />
+				<input type="submit" class="Bouton1" value="Proposer" />
+			</div>
+		</div>
+		<br>
+		<?php endforeach ?>
 		<br>
     </section>
 

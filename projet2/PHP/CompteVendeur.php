@@ -1,9 +1,47 @@
 <?php require 'header.php'; ?>
 
+
+
+<?php
+
+$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+$bdd = new PDO('mysql:host=localhost;dbname=projet_web','root','',$pdo_options);
+
+$erreur = null;
+if(!empty($_POST['myEmail']) && !empty($_POST['myMDP'])) {
+	$Email = $_POST['myEmail'];
+    $mdp = $_POST['myMDP'];
+
+	$req = $bdd->prepare('SELECT Email, MDP FROM vendeur WHERE Email = :email AND MDP = :mdp');
+    $req->execute(array(':email' => $Email, ':mdp' => $mdp ));
+    $res = $req->fetch();
+
+	if($res) {
+		if($_POST['myEmail'] === $res['Email'] && $_POST['myMDP'] === $res['MDP']) {
+		session_start();
+		$_SESSION['connecter'] = 2;
+		header('Location: ComptePersoVendeur.php');
+		exit();
+		}
+		else {
+			$erreur = "Identifiant ou mot de passe incorrects";
+		}
+	}	
+}
+
+require_once 'AuthentificationVendeur.php';
+if(connecter()) {
+	header('Location: ComptePersoVendeur');
+	exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Achat Immédiat</title>
+	<title>Mon compte</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -39,33 +77,31 @@
 		</div>
 	</nav>
 
-	<section class="page-header header container-fluid">
-		<br>
-		<div class="Achat">
-			<h1>Les Articles à acheter maintenant</h1>
-		</div>
-        <?php $produit = $DB->query('SELECT * FROM produit WHERE TypeVente = "Achat Immediat" ' ); ?>
-		<?php foreach ($produit as $key => $produit): ?>
-		<div class="pListe">
-			<div class="pImage">
-				<p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
-			</div>
-			<div class="pInformations">
-				<h5><?= $produit->Nom ?></h5>
-				<p><?= $produit->Description ?></p>
-			</div>
-			<div class="pQuantite">
-				<p><?= number_format($produit->Prix,2,',',''); ?>€</p>
-			</div>
-			<div class="pAjouterPanier">
-				<a class="ajouterpanier" href="ajouterpanier.php?id=<?= $produit->Id_Item; ?>">
-					<img src="Img/panier.jpg" alt="Panier" width="40px">
-				</a>
-			</div>
-		</div>
-		<br>
-		<?php endforeach ?>
-		<br>
-    </section>
 
-    <?php require 'footer.php'; ?>
+	<section class="page-header header container-fluid">
+		<br> <br> <br> <br> <br>
+		<?php if($erreur): ?>
+			<div class="alert alert-danger">
+				<?= $erreur ?>
+			</div>
+		<?php endif ?>
+		<form action="" method="post">
+			<div class="Compte">
+				<h1>Connectez-vous<h1>
+				<p>
+					<label class="labelCol" for="myEmail">Pseudo ou E-mail: </label> <br>
+					<input type="text" class="myConnection" name="myEmail" id="myEmail" />
+					<br><br>
+					<label class="labelCol" for="myMDP">Mot de passe: </label> <br>
+					<input type="password" class="myConnection" name="myMDP" id="myMDP" /> <br> 
+					<a class="MDPO" href="MotdePasseOublie.php">Mot de passe oublié ? <br></a> 
+					<br>
+					<input type="submit" class="Bouton1" value="Connexion" />
+					<p class="Bouton1">Nouveau sur ECE Marketplace ? <a href="ChoixCreationCompte.php">S'inscrire</a></p>
+				</p>
+		    </div>
+		</form>
+		<br> <br> <br> <br> <br>
+	</section>
+
+	<?php require 'footer.php'; ?>

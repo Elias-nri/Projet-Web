@@ -2,15 +2,17 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Mot de passe oublié</title>
+	<title>Transaction Vendeur Client</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="MiseEnPage1.css">
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-md">
 		<a class="navbar-brand" href="Accueil.php">ECE MarketPlace</a>
@@ -24,29 +26,40 @@
 				<li class="nav-item"><a class="nav-link" href="Parcourir.php">Parcourir</a></li>
 				<li class="nav-item"><a class="nav-link" href="Notifications.php">Notifications</a></li>
 				<li class="nav-item"><a class="nav-link" href="ChoixConnectionCompte.php">Mon compte</a></li>
-				<li class="nav-item"><a class="nav-link" href="Panier.php"><img src="Img/panier.jpg" alt="Panier" width="30 px"></a></li>
+				<li class="nav-item"><a class="nav-link" href="Panier.php"><img src="Img/panier.jpg" alt="Panier"
+							width="30 px"></a></li>
 			</ul>
 		</div>
 	</nav>
+
+
 	<section class="page-header header container-fluid">
+
 		<br>
-		<form>
-			<div class="Compte">
-				<h2>Réinitialisez votre mot de passe<h2>
-				<p>
-				<label class="labelCol" for="myEmail">Pseudo ou E-mail: </label> <br>
-				<input type="text" class="myConnection" name="myEmail" id="myEmail" />
-				<br><br>
-				<label class="labelCol" for="myMDP">Mot de passe: </label> <br>
-				<input type="password" class="myConnection" name="myMDP" id="myMDP" /> 
-				<br><br> 
-				<label class="labelCol" for="myMDP">Confirmez le mot de passe: </label> <br>
-				<input type="password" class="myConnection" name="myMDP" id="myMDP" />
-				<br><br>
-				<input type="submit" class="Bouton1" value="Réinitialiser" />
-		    </div>
-		</form>
+		<h1 class="titre">Proposez un prix et négociez avec le vendeur !</h1>
+		<?php $produit = $DB->query('SELECT * FROM produit WHERE TypeVente = "Transaction Vendeur/Client" ' ); ?>
+		<?php foreach ($produit as $key => $produit): ?>
+		<div class="pListeMO">
+			<div class="pinformationMO">
+				<div class="pImageMO">
+					<p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
+				</div>
+				<div class="pInformationsMOI">
+					<h5><?= $produit->Nom ?></h5>
+					<p><?= $produit->Description ?></p>
+				</div>
+				<br>
+			</div>
+
+			<br>
+			<div class="pinformationM">
+				<input type="number" class="transaction" name="transaction" id="transaction"
+					placeholder="Votre prix:" />
+				<input type="submit" class="Bouton1" value="Proposer" />
+			</div>
+		</div>
 		<br>
+		<?php endforeach ?>
 	</section>
 
-	<?php require 'footer.php'; ?>
+    <?php require 'footer.php'; ?>
